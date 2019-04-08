@@ -22,7 +22,33 @@ public class NumberTwo {
      * @return true if the numbers are evenly spaced, otherwise false
      */
     public boolean evenlySpaced(int a, int b, int c){
+        int large;
+        int medium;
+        int small;
+        if (a>b && b>c && a>c)
+        {
+            large = a;
+            medium = b;
+            small = c;
+            if ((large-medium)==(medium-small))
+            {
+                return true;
+            }
+        }
+
+
+        if (b>a && a>c && b>c)
+        {
+            large = b;
+            medium = a;
+            small = c;
+            if ((large-medium)==(medium-small))
+            {
+                return true;
+            }
+        }
+
         // Delete the line below and implement the method!
-        throw new UnsupportedOperationException();
+
     }
 }
