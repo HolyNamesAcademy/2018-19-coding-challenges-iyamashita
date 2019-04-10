@@ -27,7 +27,6 @@ public class NumberOne {
                  {
                      addedTarget[0]=i;
                      addedTarget[1]=j;
-                     break;
                  }
              }
          }

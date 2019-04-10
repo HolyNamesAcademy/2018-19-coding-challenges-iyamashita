@@ -47,8 +47,52 @@ public class NumberTwo {
                 return true;
             }
         }
+        if (a>c && c>b && a>b)
+        {
+            large = a;
+            medium = c;
+            small = b;
+            if ((large-medium)==(medium-small))
+            {
+                return true;
+            }
+        }
+        if (b>c && c>a && b>a)
+        {
+            large = b;
+            medium = c;
+            small = a;
+            if ((large-medium)==(medium-small))
+            {
+                return true;
+            }
+        }
+        if (c>a && a>b && c>b)
+        {
+            large = c;
+            medium = a;
+            small = b;
+            if ((large-medium)==(medium-small))
+            {
+                return true;
+            }
+        }
+        if (c>b && b>a && c>a)
+        {
+            large = c;
+            medium = b;
+            small = a;
+            if ((large-medium)==(medium-small))
+            {
+                return true;
+            }
+        }
+        if (a==b&&b==c)
+        {
+            return true;
+        }
 
         // Delete the line below and implement the method!
-
+return false;
     }
 }
